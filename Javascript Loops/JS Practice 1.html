@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		//var a = "Hello Worlds";
+			//console.log(a);
+			//console.log(a.length); // prints length
+			//console.log(a.toLowerCase()); // parenthesis mean we are doing something with A
+			console.log(a); // still prints capitols
+			var b = a.toLowerCase(); //makes b into a.toLowerCase
+			console.log(b.toUpperCase()); // Prints in CAPS
+
+			console.log(b.slice(6, b.length)); //logs b from 6 up to but not icluding b. length 
+			var c ="adlskfjlkdjsaflkjfadslkfjds:dlkafjsd:lkfjladskjf"; // finds colon index
+			var middle = c.indexOf(":"); // finds the ":" index in c
+
+			var nextmiddle = c.indexOf(":", middle, + 1); // find the next ":" startin from the last place we found ":" , pluse on
+			console.log(c.slice(middle + 1, c.length)); // this will be = 
+
+			// substring = slice 5 to 9
+			// substr(start index, length) 5, 4
+
+			var d = "Hello world how are you?";
+			console.log(d.split(" "));
+
+			var e = "3,7,8,9,10";
+			console.log(e.split(","));
+
+			var howIndex = d.indexOf("how");
+			var f = [d.slice(0, howIndex, - 2)];
+			console.log(f);
+
+
+			
+	</script>
+	<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var a = "Hello World";
+		console.log(a); // prints a
+		console.log(a.length); // prints the length of a
+		console.log(a.toLowerCase()); // prints a in lowercase
+
+		console.log(a); // still prints with capital letters
+
+		var b = a.toLowerCase();
+		console.log(b);
+
+		console.log(b.toUpperCase()); // prints b in CAPITAL LETTERS
+
+		console.log(b.slice(6, b.length)); // logs b from 6 up to but not including b.length (6 .. end of b)
+
+		var c = "iuhafliauhfd:lkheluhcdc";
+		var middle = c.indexOf(":"); // finds the ":" index in c
+
+		var nextmiddle = c.indexOf(":", middle + 1); // find the next ":", starting from the last place we found ":", plus one
+		// this will be -1, since it does not exist
+
+		console.log(c.slice(middle + 1, c.length)); // get everything in c after the ":" character
+
+		var d = "Hello world how are you";
+		console.log(d.split(" "));
+		//["Hello", "world", "how", "are", "you"]
+
+		d.split(" ").slice(2, d.split(" ").length);
+		// ["how", "are", "you"]
+
+		var e = "3,7,8,9,10";
+		console.log(e.split(","));
+		//["3", "7", "8", "9", "10"]
+
+		var howIndex = d.indexOf("how");
+		var f = [d.slice(0, howIndex), d.slice(howIndex, d.length)];
+		console.log(f);
+		// ["Hello world ", "how are you"]
+	</script>
+</body>
+</html>
+ -->
+</body>
+</html>
+

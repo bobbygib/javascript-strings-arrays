@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 3</title>
+</head>
+<body>
+	<script>
+		var input = "a man, a plan, a canal, panama!";
+		var words = input.split(" ");
+		//console.log(words);
+		var arr = [];
+		//console.log(arr);
+		for (elt in words){
+			temp2 = words[elt].slice(0,1).toUpperCase();
+			temp1 = words[elt].slice(1).toLowerCase();
+			arr[elt] = temp2+temp1;
+			console.log(arr)
+
+			newstring = arr.join(' ');
+			words.value = newstring;
+
+			}
+			
+			console.log(newstring)
+			
+
+
+			//console.log(arr.join(" "));
+			
+					//var sSplit = input.split(" ");
+
+		//console.log(sSplit);
+
+		//for (var elt of sSplit) {
+		//	var first = (elt[0]);
+
+			//console.log(first);
+		//	var  firstCap = first.toUpperCase();
+		//	console.log(firstCap);
+				
+			//var joined = firstCap.join();
+			//console.log(joined);
+	</script>
+</body>
+</html>
