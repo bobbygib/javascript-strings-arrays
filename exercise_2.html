@@ -6,20 +6,23 @@
 </head>
 <body>
 	<script>
-		var input = [
-			"erty:seidohl:jan11:codecraft",
-			"dave:gray:sep16:codecraft",
-			"sarah:hyunh:apr6:codecraft"
-		];
-		 {
-				//console.log(elt);
-			
-		var iSplit = elt.split(":");
-		var bday = (iSplit[2]);
 
-		console.log(bday);
+		var input = ["erty:seidohl:jan11:codecraft","dave:gray:sep16:codecraft","sarah:hyunh:apr6:codecraft"];	 
+		for (var line of input) {
+      var splitInput = line.split(":");//split input at ":"
+      var bDay = splitInput[2];//create new variable for birthday, access at index[2]
+        console.log(bDay);//prints birthdays!
+    }
 
-		}
+
+		//var sI = input.indexOf(":");
+
+		//var sITwo = input.indexOf(":", sI + 2);
+	
+
+		//console.log(input.slice(sI + 2; input.length));
+
+		
 
 
 		//var middle = input.indexOf(":"); // finds the ":" index in c
